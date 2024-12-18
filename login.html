@@ -10,20 +10,25 @@
 <header>
         <h1>Login</h1>
 </header>
-<main>
+<main class="login">
     <form action="#" method="post">
         <div class="campo">
+            <input type="text" name ="usuario" id="usuario" class="caixat">
             <label for="usuario">Usuário: </label>
-            <br>
-            <input type="text" name ="usuario" class="caixat">
         </div>
         <div class="campo">
+            <input type="password" name ="senha" id="senha" class="caixat">
             <label for="senha">Senha: </label>
-            <br>
-            <input type="password" name ="senha" class="caixat">
         </div>
-        <a href="serviços.html" class="btn"></a>
+        <div class="campo">
+            <div class="cbtn">
+                <a href="servicos.html" class="btn">Enviar</a>
+            </div>
+        </div>
     </form>
 </main>
+<footer style="display: flex; justify-content: center; align-items: center;">
+    <marquee style="color: white; width: 400px;"><strong>Faça seu login no site da barbearia</strong></marquee>
+</footer>
 </body>
 </html>

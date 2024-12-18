@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes carregando{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.bigode{
+    animation: carregando 1s linear infinite;
+}
 header{
-    width: 100vw;
-    height: 10vh;
+    width: 100dvw;
+    height: 10dvh;
     color: white;
     display: flex;
     justify-content: center;
@@ -13,11 +21,63 @@ header{
     background-color: black;
 }
 main{
-    width: 100vw;
-    height: 80vh;
+    width: 100dvw;
+    height: 80dvh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(56, 56, 56);
+}
+footer{
+    background-color: black;
+    width: 100dvw;
+    height: 10dvh;
+}
+.campo{
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: white;
+    padding: 0 5;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: 0.3s;
+}
+input{
+    color: white;
+    border: 2px solid white;
+    background-color:transparent ;
+    border-radius: 5px;
+    height: 60px;
+    width: 300px;
+    padding: 0 1em;
+    outline: none;
+}
+input:focus~label,
+input:valid~label{
+    top: 0;
+    background-color: rgb(56, 56, 56);
+    font-size: 1rem;
+}
+.cbtn{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    
 }
