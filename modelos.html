@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="botao">
+            <h1>☰</h1> 
+        </button>
+        <h1>Modelos</h1>
+    </header>
+    <main class="expandir">
+
+        <div class="menu">
+            <ul>
+                <li class="lim"><a href="servicos.html"><h1>Serviços</h1></a></li>
+                <li class="lim"><a href="agendamento.html"><h1>Agendamento</h1></a></li>
+                <li class="lim"><a href="historico.html"><h1>Historico</h1></a></li>
+                <li class="lim"><a href="barbeiros.html"><h1>Barbeiros</h1></a></li>
+                <li class="lim"><a href="modelos.html"><h1>Modelos</h1></a></li>
+            </ul>
+        </div>
+
+        <div class="pessoas">
+            <div class="pessoa">
+                <div class="img">
+                    <img src="img/modelo1.png" alt="modelo1">
+                </div>
+                <div class="conteudo">
+                    <h2>Micael</h2>
+                    <p>A muito tempo procurava um corte para combinar com seu bigode e na barbearia achou gente que pode ajuda-lo.</p>
+                </div>
+            </div>
+            <div class="pessoa">
+                <div class="img">
+                    <img src="img/modelo2.png" alt="modelo2">
+                </div>
+                <div class="conteudo">
+                    <h2>Lucas</h2>
+                    <p>Cliente fiel a anos sempre fazendo os cortes que estão na moda atual masculina.</p>
+                </div>
+            </div>
+            <div class="pessoa">
+                <div class="img">
+                    <img src="img/modelo3.png" alt="modelo3">
+                </div>
+                <div class="conteudo">
+                    <h2>Felipe</h2>
+                    <p>Aparece todo mês para deixar seu cabelo curto e organizado.</p>
+                </div>
+            </div>
+            <div class="pessoa" style="margin-bottom: 10px;">
+                <div class="img">
+                    <img src="img/modelo4.png" alt="modelo4">
+                </div>
+                <div class="conteudo">
+                    <h2>Asafe</h2>
+                    <p>Vai na barbearia para fazer um corte que demonstre que ele é uma pessoa mais séria.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><marquee><strong>Modelos</strong></marquee></footer>
+    <script>
+        let menu = document.querySelector('.menu');
+        let botao = document.querySelector('.botao');
+        botao.addEventListener('click',()=>{
+            menu.classList.toggle('ativo');
+        })
+    </script>
+</body>
+</html>

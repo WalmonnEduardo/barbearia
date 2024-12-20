@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
+    <title>Barbeiros</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
         <button class="botao">
             <h1>☰</h1> 
         </button>
-        <h1>Serviços</h1> 
+        <h1>Barbeiros</h1>
     </header>
-    <main class="expandir">
+    <main class="barbeiros expandir">
         <div class="menu">
             <ul>
                 <li class="lim"><a href="servicos.html"><h1>Serviços</h1></a></li>
@@ -24,22 +24,28 @@
             </ul>
         </div>
 
-        <div class="servicos">
-            <div class="servico">
-                <img src="img/cabelo.png" alt="cabelo" class="cabelo">
-                <p>Cabelo</p>
+        <div class="pessoas">
+            <div class="pessoa">
+                <div class="img">
+                    <img src="img/barbeiro1.png" alt="barbeiro1">
+                </div>
+                <div class="conteudo">
+                    <h2>Petrus Mito</h2>
+                    <p>Formado em engenharia elétrica mas como a vida está difícil ele decidiu como segundo emprego trabalhar na barbearia.</p>
+                </div>
             </div>
-            <div class="servico">
-                <img src="img/barba.png" alt="barba" class="barba">
-                <p>Barba</p>
-            </div>
-            <div class="servico">
-                <img src="img/sobrancelha.png" alt="sobrancelha" class="sobrancelha">
-                <p>Sobrancelha</p>
+            <div class="pessoa"style="margin-bottom: 10px;">
+                <div class="img">
+                    <img src="img/barbeiro2.png" alt="barbeiro2">
+                </div>
+                <div class="conteudo">
+                    <h2>Guilherme Wernke</h2>
+                    <p>Formado em direito mas como ninguém cortava o cabelo dele de forma correta ele aprendeu a cortar cabelo e decidiu trabalhar na barbearia.</p>
+                </div>
             </div>
         </div>
     </main>
-    <footer><marquee><strong>Seviços da Barbearia</strong></marquee></footer>
+    <footer ><marquee><strong>Nossos barbeiros</strong></marquee></footer>
 
     <script>
         let menu = document.querySelector('.menu');
@@ -48,6 +54,5 @@
             menu.classList.toggle('ativo');
         })
     </script>
-
 </body>
 </html>

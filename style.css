@@ -3,81 +3,212 @@
     padding: 0;
     box-sizing: border-box;
 }
-@keyframes carregando{
+header{
+    height: 10dvh;
+    width: 100dvw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height: 80dvh;
+    width: 100dvw;
+    background-color: gray;
+}
+.expandir{
+    height: 100%;
+    min-height: 80dvh;
+}
+footer{
+    height: 10dvh;
+    width: 100dvw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+marquee{
+    width: 200px;
+}
+input, select{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+.cbtn{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+.ativo
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    width: 100dvw;
+    height: 30dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.botao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+img{
+    width: 200px;
+}
+.img img{
+    height: 100%;
+}
+h1,h2,p,a,strong{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+@keyframes spin{
     to{
         transform: rotate(360deg);
     }
 }
+
+/*Tela de carregamento*/
+
+.inicio{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
 .bigode{
-    animation: carregando 1s linear infinite;
+    width: 200px;
+    animation: spin 1s linear infinite;
 }
-header{
-    width: 100dvw;
-    height: 10dvh;
-    color: white;
+
+/*Tela de login*/
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login form{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Tela de serviços*/
+
+.servicos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servico{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Tela de agendamento*/
+
+.agendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agendamento .campo{
+    padding: 20px;
+}
+.agendamento form{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Tela de histórico*/
+
+.historico{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hist{
+    height: 30%;
+    width: 80%;
+    border-radius: 50px;
     background-color: black;
 }
-main{
-    width: 100dvw;
-    height: 80dvh;
-    color: white;
+.data{
+    height: 30%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(61, 58, 58);
+    border-radius: 50px 50px 0 0;
 }
-footer{
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Tela de barbeiros*/
+
+.pessoas{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pessoa{
+    height: 450px;
+    width: 80%;
+    border-radius: 50px;
     background-color: black;
-    width: 100dvw;
-    height: 10dvh;
-}
-.campo{
-    position: relative;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-label{
-    color: white;
-    padding: 0 5;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 1em;
-    pointer-events: none;
-    transition: 0.3s;
-}
-input{
-    color: white;
-    border: 2px solid white;
-    background-color:transparent ;
-    border-radius: 5px;
-    height: 60px;
-    width: 300px;
-    padding: 0 1em;
-    outline: none;
-}
-input:focus~label,
-input:valid~label{
-    top: 0;
-    background-color: rgb(56, 56, 56);
-    font-size: 1rem;
-}
-.cbtn{
-    background-color: black;
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-}
-.btn{
-    color: white;
-    text-decoration: none;
-    
+    margin-top: 10px;
 }

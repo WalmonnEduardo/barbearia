@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="botao">
+            <h1>☰</h1> 
+        </button>
+        <h1>Agendamento</h1>
+    </header>
+    <main class="agendamento">
+        <div class="menu">
+            <ul>
+                <li class="lim"><a href="servicos.html"><h1>Serviços</h1></a></li>
+                <li class="lim"><a href="agendamento.html"><h1>Agendamento</h1></a></li>
+                <li class="lim"><a href="historico.html"><h1>Historico</h1></a></li>
+                <li class="lim"><a href="barbeiros.html"><h1>Barbeiros</h1></a></li>
+                <li class="lim"><a href="modelos.html"><h1>Modelos</h1></a></li>
+            </ul>
+        </div>
+
+        </div>
+        <div class="servicos">
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="tipo">Tipo de serviço: </label>
+                    <br>
+                    <select name="tipo" id="tipo">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="cabelo">Cabelo</option>
+                        <option value="cabelo">Barba</option>
+                        <option value="cabelo">Sobrancelha</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="data">Data: </label>
+                    <br>
+                    <input type="date" id="data" name="data" class="caixat">
+                </div>
+                <div class="campo">
+                    <label for="time">Hora: </label>
+                    <br>
+                    <input type="time" id="time" name="time" class="caixat">
+                </div>
+                <div class="campo">
+                    <div class="cbtn">
+                        <a href="servicos.html" class="btn">Enviar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer><marquee><strong>Agendamento da barbearia</strong></marquee></footer>
+    <script>
+        let menu = document.querySelector('.menu');
+        let botao = document.querySelector('.botao');
+        botao.addEventListener('click',()=>{
+            menu.classList.toggle('ativo');
+        })
+    </script>
+</body>
+</html>
